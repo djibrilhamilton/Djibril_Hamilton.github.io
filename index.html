@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Djibril Hamilton – Data & IA</title>
+<meta name="description" content="Portfolio de Djibril Hamilton, étudiant Centrale Nantes & Audencia (Big Data, Management, IA). Recherche stage / alternance en Data & IA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6F7F9;--surface:#FFFFFF;--ink:#1B2433;--muted:#5B6678;--line:#DDE2E8;--accent:#2F5D7C;--accent-soft:#E4ECF2;
+--head:'Bricolage Grotesque',system-ui,sans-serif;--body:'Inter',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font:400 1rem/1.65 var(--body);color:var(--ink);background:var(--bg)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+html[lang=fr] .en,html[lang=en] .fr{display:none}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:0;z-index:10;background:rgba(246,247,249,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font:700 1.05rem var(--head);text-decoration:none}
+nav{display:flex;gap:22px;align-items:center;font-size:.92rem}
+nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--ink)}
+#lang{font:600 .8rem var(--body);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 12px;cursor:pointer;color:var(--ink)}
+#hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+#net{position:absolute;inset:0;width:100%;height:100%}
+.hero-in{position:relative;display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:center;padding:96px 24px 88px}
+.hero-in>*{animation:rise .8s ease both}.hero-in>div+div{animation-delay:.15s}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}}
+h1{font:700 clamp(2.6rem,6vw,4.4rem)/1.05 var(--head);letter-spacing:-.02em}
+.role{font:500 1.25rem var(--head);color:var(--accent);margin:14px 0 18px}
+.lead{color:var(--muted);max-width:52ch}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:11px 20px;border-radius:8px;font-weight:600;font-size:.95rem;text-decoration:none;border:1px solid var(--ink);transition:background .2s,color .2s}
+.btn.p{background:var(--ink);color:#fff}.btn.p:hover{background:var(--accent);border-color:var(--accent)}
+.btn.s:hover{background:var(--ink);color:#fff}
+.photo{aspect-ratio:4/5;border-radius:16px;overflow:hidden;background:var(--accent-soft);border:1px solid var(--line);display:grid;place-items:center;font:700 4rem var(--head);color:var(--accent);box-shadow:0 18px 40px -22px rgba(27,36,51,.35)}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+section{padding:84px 0}
+h2{font:700 clamp(1.8rem,3.5vw,2.4rem) var(--head);letter-spacing:-.01em;margin-bottom:10px}
+.sub{color:var(--muted);margin-bottom:36px;max-width:60ch}
+.tabs{display:inline-flex;border:1px solid var(--line);border-radius:10px;padding:4px;background:var(--surface);margin-bottom:32px}
+.tabs button{font:600 .9rem var(--body);border:0;background:none;padding:8px 18px;border-radius:7px;cursor:pointer;color:var(--muted)}
+.tabs button[aria-selected=true]{background:var(--ink);color:#fff}
+.panel[hidden]{display:none}
+.tl{border-left:2px solid var(--line);margin-left:6px}
+.item{position:relative;padding:0 0 34px 28px}
+.item::before{content:"";position:absolute;left:-7px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.item h3{font:700 1.15rem var(--head)}
+.meta{color:var(--muted);font-size:.88rem;margin:2px 0 8px}
+.item ul{padding-left:18px;color:#364154;font-size:.96rem}.item li{margin-bottom:4px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
+details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;transition:border-color .2s,box-shadow .2s}
+details:hover,details[open]{border-color:var(--accent);box-shadow:0 14px 30px -20px rgba(47,93,124,.5)}
+summary{cursor:pointer;list-style:none;font:700 1.1rem var(--head);display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--accent);font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{margin-top:12px;color:#364154;font-size:.95rem}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.tag{font-size:.78rem;padding:3px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-weight:500}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:28px}
+.skills h3{font:700 1rem var(--head);margin-bottom:10px}
+.skills .tags{margin:0}.skills .tag{background:var(--surface);border:1px solid var(--line);color:var(--ink);font-size:.85rem}
+#contact{background:var(--ink);color:#fff}
+#contact .sub{color:#B9C2CF}
+#contact .btn.p{background:#fff;color:var(--ink);border-color:#fff}#contact .btn.p:hover{background:var(--accent-soft)}
+#contact .btn.s{border-color:#5B6678;color:#fff}#contact .btn.s:hover{background:#fff;color:var(--ink)}
+footer{padding:22px 0;font-size:.85rem;color:var(--muted);text-align:center}
+@media(max-width:760px){.hero-in{grid-template-columns:1fr;padding:56px 24px}.photo{max-width:260px;order:-1}nav a.hide{display:none}section{padding:60px 0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="#top">Djibril Hamilton</a>
+  <nav>
+    <a class="hide" href="#parcours"><span class="fr">Parcours</span><span class="en">Background</span></a>
+    <a class="hide" href="#projets"><span class="fr">Projets</span><span class="en">Projects</span></a>
+    <a class="hide" href="#competences"><span class="fr">Compétences</span><span class="en">Skills</span></a>
+    <a href="#contact">Contact</a>
+    <button id="lang" aria-label="Changer de langue / Switch language">EN</button>
+  </nav>
+</div></header>
+
+<main id="top">
+<div id="hero"><canvas id="net" aria-hidden="true"></canvas>
+<div class="wrap hero-in">
+  <div>
+    <h1>Djibril Hamilton</h1>
+    <p class="role"><span class="fr">Data &amp; Intelligence Artificielle</span><span class="en">Data &amp; Artificial Intelligence</span></p>
+    <p class="lead">
+      <span class="fr">Étudiant en double diplôme Centrale Nantes &amp; Audencia (Big Data, Management et IA). J'automatise des processus avec Python et n8n, et je construis des agents IA. Je recherche un stage ou une alternance en Data / IA.</span>
+      <span class="en">Dual-degree student at Centrale Nantes &amp; Audencia (Big Data, Management and AI). I automate processes with Python and n8n and build AI agents. I'm looking for an internship or work-study position in Data / AI.</span>
+    </p>
+    <div class="cta">
+      <a class="btn p" href="#contact"><span class="fr">Me contacter</span><span class="en">Get in touch</span></a>
+      <a class="btn s" href="CV_Djibril_Hamilton.pdf" download><span class="fr">Télécharger mon CV</span><span class="en">Download my CV</span></a>
+    </div>
+  </div>
+  <div class="photo"><img src="photo.jpg" alt="Portrait de Djibril Hamilton" onerror="this.remove();this.parentNode.textContent='DH'"></div>
+</div></div>
+
+<section id="parcours"><div class="wrap">
+  <h2><span class="fr">Parcours</span><span class="en">Background</span></h2>
+  <p class="sub"><span class="fr">Mes expériences et ma formation, de Nantes à Shenzhen en passant par Casablanca.</span><span class="en">My experience and education, from Nantes to Shenzhen via Casablanca.</span></p>
+  <div class="tabs" role="tablist">
+    <button role="tab" aria-selected="true" data-p="exp"><span class="fr">Expériences</span><span class="en">Experience</span></button>
+    <button role="tab" aria-selected="false" data-p="edu"><span class="fr">Formation</span><span class="en">Education</span></button>
+  </div>
+
+  <div class="panel tl" id="exp">
+    <div class="item"><h3>L2C Technologies</h3>
+      <p class="meta"><span class="fr">Stagiaire intégration IA · Nantes · mai – juillet 2026</span><span class="en">AI Integration Intern · Nantes · May – July 2026</span></p>
+      <ul class="fr"><li>Développement et automatisation de processus avec Python, n8n et différentes API ; création d'agents IA pour automatiser des tâches répétitives.</li><li>Création et administration de boutiques Shopify, optimisation SEO, gestion produits, modifications WordPress/Webflow.</li></ul>
+      <ul class="en"><li>Built and automated processes with Python, n8n and various APIs; created AI agents to automate repetitive tasks.</li><li>Created and managed Shopify stores, SEO optimization, product management, WordPress/Webflow edits.</li></ul></div>
+    <div class="item"><h3>Absolis Sud Intérim</h3>
+      <p class="meta"><span class="fr">Intérimaire saisonnier · Nantes · juillet – août 2025</span><span class="en">Seasonal temp worker · Nantes · July – Aug 2025</span></p>
+      <ul class="fr"><li>Missions courtes en logistique, production et travaux saisonniers : adaptabilité, fiabilité, sens du travail.</li></ul>
+      <ul class="en"><li>Short assignments in logistics, production and seasonal work: adaptability, reliability, strong work ethic.</li></ul></div>
+    <div class="item"><h3>FC Nantes</h3>
+      <p class="meta"><span class="fr">Équipier polyvalent · Nantes · depuis août 2024</span><span class="en">Team member · Nantes · since Aug 2024</span></p>
+      <ul class="fr"><li>Service client, encaissement et gestion des flux à forte affluence lors des matchs.</li><li>Anticipation des besoins en équipe, ouverture et fermeture de la buvette.</li></ul>
+      <ul class="en"><li>Customer service, cash handling and crowd flow management on match days.</li><li>Anticipating needs as a team, opening and closing the stand.</li></ul></div>
+    <div class="item"><h3>Keller Williams Realty</h3>
+      <p class="meta"><span class="fr">Assistant des opérations d'un agent immobilier · Texas, États-Unis · juin – août 2024</span><span class="en">Real estate agent operations assistant · Texas, USA · June – Aug 2024</span></p>
+      <ul class="fr"><li>Préparation des maisons, visites guidées, réponses aux clients : contribution à la vente de 4 maisons (environ 675 000 $ de bénéfice).</li><li>Support logistique pour les nouveaux propriétaires.</li></ul>
+      <ul class="en"><li>Prepared homes, led tours, answered client questions: contributed to the sale of 4 homes (about $675,000 in profit).</li><li>Logistics support for new homeowners.</li></ul></div>
+  </div>
+
+  <div class="panel tl" id="edu" hidden>
+    <div class="item"><h3>Centrale Nantes &amp; Audencia</h3>
+      <p class="meta"><span class="fr">Double diplôme Big Data, Management et IA · Nantes · 2023 – 2027</span><span class="en">Dual degree in Big Data, Management and AI · Nantes · 2023 – 2027</span></p>
+      <ul class="fr"><li>Systèmes d'information, Cloud computing, Visualisation scientifique, NLP, Informatique quantique.</li><li>Python, Business Intelligence (Power BI, Excel), bases de données SQL.</li></ul>
+      <ul class="en"><li>Information systems, Cloud computing, Scientific visualization, NLP, Quantum computing.</li><li>Python, Business Intelligence (Power BI, Excel), SQL databases.</li></ul></div>
+    <div class="item"><h3>Shenzhen University</h3>
+      <p class="meta"><span class="fr">Semestre d'échange · Chine · septembre 2025</span><span class="en">Exchange semester · China · September 2025</span></p>
+      <ul class="fr"><li>FinTech, IoT, Blockchain &amp; Business Analytics, étude des marchés chinois.</li></ul>
+      <ul class="en"><li>FinTech, IoT, Blockchain &amp; Business Analytics, Chinese market studies.</li></ul></div>
+    <div class="item"><h3>Centrale Casablanca</h3>
+      <p class="meta"><span class="fr">Semestre d'échange · Maroc · février 2025</span><span class="en">Exchange semester · Morocco · February 2025</span></p>
+      <ul class="fr"><li>Machine et Deep Learning, analyse de données, sécurité des systèmes d'information.</li></ul>
+      <ul class="en"><li>Machine and Deep Learning, data analysis, information systems security.</li></ul></div>
+    <div class="item"><h3>Lycée Les Bourdonnières</h3>
+      <p class="meta"><span class="fr">Baccalauréat général, mention bien · Nantes · 2020 – 2023</span><span class="en">General baccalaureate, with honors · Nantes · 2020 – 2023</span></p>
+      <ul class="fr"><li>Numérique et Sciences Informatiques, Mathématiques, section européenne allemand.</li></ul>
+      <ul class="en"><li>Computer Science, Mathematics, European German section.</li></ul></div>
+  </div>
+</div></section>
+
+<section id="projets" style="background:var(--surface);border-block:1px solid var(--line)"><div class="wrap">
+  <h2><span class="fr">Projets</span><span class="en">Projects</span></h2>
+  <p class="sub"><span class="fr">Projets data, IA et automatisation. Clique sur un projet pour voir le détail.</span><span class="en">Data, AI and automation projects. Click a project to see the details.</span></p>
+  <div class="grid">
+    <details open><summary><span class="fr">Prédicteur Coupe du Monde 2026</span><span class="en">World Cup 2026 predictor</span></summary>
+      <p class="fr">Moteur de prédiction qui simule le tournoi complet 50 000 fois. Il combine un modèle de Poisson Dixon-Coles, les ratings ELO, la qualité des effectifs (EA FC 26) et l'impact des blessures. Backtesté sur la Coupe du Monde 2022 : environ 60 % de précision sur les résultats et un score de Brier de 0,52 (0,67 pour le hasard). L'interface permet de simuler n'importe quel match et de voir la probabilité de chaque score.</p>
+      <p class="en">Prediction engine that simulates the whole tournament 50,000 times. It combines a Dixon-Coles Poisson model, ELO ratings, squad quality (EA FC 26) and injury impact. Backtested on the 2022 World Cup: about 60% accuracy on match results and a Brier score of 0.52 (0.67 for random guessing). The interface lets you simulate any match and see the probability of each scoreline.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">React</span><span class="tag">Vite</span><span class="tag">TailwindCSS</span><span class="tag">SciPy</span><span class="tag">NumPy</span></div></details>
+    <details><summary>ChurnGuard</summary>
+      <p class="fr">Prédit quels clients vont partir, explique pourquoi et chiffre l'impact financier. Entraîné sur le dataset IBM Telco (7 032 clients, 21 variables). XGBoost retenu pour son meilleur ROC-AUC (0,856). Dashboard Streamlit en 4 pages : vue d'ensemble, clients à risque, impact business et explication SHAP par client. Environ 1,3 M$ de revenu annuel à risque identifié.</p>
+      <p class="en">Predicts which customers will leave, explains why and quantifies the financial impact. Trained on the IBM Telco dataset (7,032 customers, 21 features). XGBoost chosen for the best ROC-AUC (0.856). 4-page Streamlit dashboard: overview, at-risk customers, business impact and per-customer SHAP explanation. About $1.3M of annual revenue at risk identified.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">XGBoost</span><span class="tag">SHAP</span><span class="tag">Streamlit</span><span class="tag">Plotly</span></div></details>
+    <details><summary><span class="fr">Agent IA planning sur Telegram</span><span class="en">Telegram AI planning agent</span></summary>
+      <p class="fr">Agent basé sur Claude, connecté à Telegram. Il comprend mes messages vocaux et écrits, gère mon planning comme un calendrier intelligent, optimise mon temps et m'envoie des rappels pour ne manquer aucun événement.</p>
+      <p class="en">Claude-based agent connected to Telegram. It understands my voice and text messages, manages my schedule like a smart calendar, optimizes my time and sends reminders so I never miss an event.</p>
+      <div class="tags"><span class="tag">Claude</span><span class="tag">Telegram</span><span class="tag">n8n</span><span class="tag"><span class="fr">Agent IA</span><span class="en">AI agent</span></span></div></details>
+    <details><summary><span class="fr">Newsletter tech personnalisée</span><span class="en">Personalised tech newsletter</span></summary>
+      <p class="fr">Newsletter sur l'actualité tech, générée automatiquement avec n8n et Claude et adaptée à mes centres d'intérêt.</p>
+      <p class="en">Tech news newsletter generated automatically with n8n and Claude, tailored to my interests.</p>
+      <div class="tags"><span class="tag">n8n</span><span class="tag">Claude</span><span class="tag"><span class="fr">Automatisation</span><span class="en">Automation</span></span></div></details>
+  </div>
+  <p style="margin-top:28px"><a class="btn s" href="https://github.com/djibrilhamilton" target="_blank" rel="noopener"><span class="fr">Voir tout sur GitHub</span><span class="en">See everything on GitHub</span></a></p>
+</div></section>
+
+<section id="competences"><div class="wrap">
+  <h2><span class="fr">Compétences</span><span class="en">Skills</span></h2>
+  <p class="sub"><span class="fr">Les outils et domaines que je maîtrise le mieux.</span><span class="en">The tools and fields I know best.</span></p>
+  <div class="skills">
+    <div><h3>Data &amp; IA</h3><div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Machine Learning</span><span class="tag">Deep Learning</span><span class="tag">NLP</span><span class="tag">Power BI</span><span class="tag">Excel</span></div></div>
+    <div><h3><span class="fr">Automatisation &amp; Web</span><span class="en">Automation &amp; Web</span></h3><div class="tags"><span class="tag">n8n</span><span class="tag">API</span><span class="tag">Shopify</span><span class="tag">HTML</span><span class="tag">SEO</span><span class="tag">WordPress</span><span class="tag">Webflow</span></div></div>
+    <div><h3><span class="fr">Business &amp; Finance</span><span class="en">Business &amp; Finance</span></h3><div class="tags"><span class="tag"><span class="fr">Analyse de données</span><span class="en">Data analysis</span></span><span class="tag">Business Intelligence</span><span class="tag"><span class="fr">Rapport financier</span><span class="en">Financial reporting</span></span><span class="tag"><span class="fr">Comptabilité</span><span class="en">Accounting</span></span></div></div>
+    <div><h3><span class="fr">Langues</span><span class="en">Languages</span></h3><div class="tags"><span class="tag"><span class="fr">Français (natif)</span><span class="en">French (native)</span></span><span class="tag"><span class="fr">Anglais (bilingue)</span><span class="en">English (bilingual)</span></span><span class="tag"><span class="fr">Allemand (B2)</span><span class="en">German (B2)</span></span></div></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2><span class="fr">Discutons</span><span class="en">Let's talk</span></h2>
+  <p class="sub"><span class="fr">Je recherche un stage ou une alternance en Data / IA. Écris-moi, je réponds rapidement.</span><span class="en">I'm looking for a Data / AI internship or work-study. Write to me, I reply quickly.</span></p>
+  <div class="cta">
+    <a class="btn p" href="mailto:djibril.hamilton@audencia.com">djibril.hamilton@audencia.com</a>
+    <a class="btn s" href="https://www.linkedin.com/in/djibril-hamilton-a20854295/" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn s" href="https://github.com/djibrilhamilton" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</div></section>
+</main>
+<footer>© 2026 Djibril Hamilton · Nantes</footer>
+
+<script>
+// Langue (mémorisée)
+const root=document.documentElement,lb=document.getElementById('lang');
+function setLang(l){root.lang=l;lb.textContent=l==='fr'?'EN':'FR';try{localStorage.setItem('lang',l)}catch(e){}}
+let saved='fr';try{saved=localStorage.getItem('lang')||((navigator.language||'fr').startsWith('fr')?'fr':'en')}catch(e){}
+setLang(saved);lb.onclick=()=>setLang(root.lang==='fr'?'en':'fr');
+// Onglets Expériences / Formation
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.tabs button').forEach(x=>x.setAttribute('aria-selected',x===b));
+  document.querySelectorAll('.panel').forEach(p=>p.hidden=p.id!==b.dataset.p);
+});
+// Réseau de points interactif (hero)
+(function(){
+  const c=document.getElementById('net'),x=c.getContext('2d'),m={x:-999,y:-999};
+  const still=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  let w,h,pts=[];
+  function size(){w=c.width=c.offsetWidth;h=c.height=c.offsetHeight;
+    pts=Array.from({length:Math.round(w*h/14000)},()=>({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.3}))}
+  function draw(){x.clearRect(0,0,w,h);
+    for(const p of pts){
+      if(!still){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>w)p.vx*=-1;if(p.y<0||p.y>h)p.vy*=-1}
+      const dx=p.x-m.x,dy=p.y-m.y,d=Math.hypot(dx,dy);
+      if(d<110&&!still){p.x+=dx/d*1.2;p.y+=dy/d*1.2}
+      x.fillStyle='rgba(47,93,124,.45)';x.beginPath();x.arc(p.x,p.y,2,0,6.3);x.fill()}
+    for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){
+      const d=Math.hypot(pts[i].x-pts[j].x,pts[i].y-pts[j].y);
+      if(d<110){x.strokeStyle='rgba(47,93,124,'+(.18*(1-d/110))+')';x.beginPath();x.moveTo(pts[i].x,pts[i].y);x.lineTo(pts[j].x,pts[j].y);x.stroke()}}
+    if(!still)requestAnimationFrame(draw)}
+  c.parentNode.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();m.x=e.clientX-r.left;m.y=e.clientY-r.top});
+  c.parentNode.addEventListener('mouseleave',()=>{m.x=m.y=-999});
+  addEventListener('resize',()=>{size();if(still)draw()});
+  size();draw();
+})();
+</script>
+</body>
+</html>
