@@ -3,232 +3,250 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Djibril Hamilton – Data & IA</title>
-<meta name="description" content="Portfolio de Djibril Hamilton, étudiant Centrale Nantes & Audencia (Big Data, Management, IA). Recherche stage / alternance en Data & IA.">
+<title>Djibril Hamilton – Data Analyst / Data Scientist</title>
+<meta name="description" content="Djibril Hamilton, étudiant Centrale Nantes & Audencia. Recherche un stage data de 6 mois à partir de février 2027.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
 <style>
-:root{--bg:#F6F7F9;--surface:#FFFFFF;--ink:#1B2433;--muted:#5B6678;--line:#DDE2E8;--accent:#2F5D7C;--accent-soft:#E4ECF2;
---head:'Bricolage Grotesque',system-ui,sans-serif;--body:'Inter',system-ui,sans-serif}
+:root{--bg:#F3F4F6;--paper:#fff;--ink:#14213D;--muted:#566074;--line:#DADFE6;--acc:#B5654A;--blue:#2F5D7C;--soft:#E4ECF2;--serif:'Fraunces',Georgia,serif;--sans:'Inter',system-ui,sans-serif}
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{font:400 1rem/1.65 var(--body);color:var(--ink);background:var(--bg)}
-a{color:inherit}
-:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font:400 1rem/1.7 var(--sans);color:var(--ink);background:var(--bg)}
+a{color:inherit}:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
 html[lang=fr] .en,html[lang=en] .fr{display:none}
-.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
-header{position:sticky;top:0;z-index:10;background:rgba(246,247,249,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
-.logo{font:700 1.05rem var(--head);text-decoration:none}
-nav{display:flex;gap:22px;align-items:center;font-size:.92rem}
+.w{max-width:1100px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:0;z-index:10;background:rgba(243,244,246,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .w{display:flex;justify-content:space-between;align-items:center;height:58px}
+.logo{font:700 1.05rem var(--serif);text-decoration:none}
+nav{display:flex;gap:22px;align-items:center;font-size:.9rem}
 nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--ink)}
-#lang{font:600 .8rem var(--body);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 12px;cursor:pointer;color:var(--ink)}
-#hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+#lang{font:600 .8rem var(--sans);border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:5px 12px;cursor:pointer;color:var(--ink)}
+#hero{position:relative;overflow:hidden}
 #net{position:absolute;inset:0;width:100%;height:100%}
-.hero-in{position:relative;display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:center;padding:96px 24px 88px}
-.hero-in>*{animation:rise .8s ease both}.hero-in>div+div{animation-delay:.15s}
-@keyframes rise{from{opacity:0;transform:translateY(14px)}}
-h1{font:700 clamp(2.6rem,6vw,4.4rem)/1.05 var(--head);letter-spacing:-.02em}
-.role{font:500 1.25rem var(--head);color:var(--accent);margin:14px 0 18px}
-.lead{color:var(--muted);max-width:52ch}
-.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-.btn{display:inline-block;padding:11px 20px;border-radius:8px;font-weight:600;font-size:.95rem;text-decoration:none;border:1px solid var(--ink);transition:background .2s,color .2s}
-.btn.p{background:var(--ink);color:#fff}.btn.p:hover{background:var(--accent);border-color:var(--accent)}
+.hero{position:relative;display:grid;grid-template-columns:1.6fr 1fr;gap:56px;align-items:center;padding:90px 24px 70px}
+.badge{display:inline-block;font:600 .8rem var(--sans);color:var(--acc);border:1px solid var(--acc);border-radius:999px;padding:5px 14px;margin-bottom:22px}
+h1{font:700 clamp(2.8rem,6.6vw,5.6rem)/1 var(--serif);letter-spacing:-.025em}
+h1 em{font-style:italic;font-weight:500;color:var(--acc)}
+.lead{color:var(--muted);max-width:54ch;margin-top:24px;font-size:1.08rem}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-block;padding:12px 22px;border-radius:8px;font-weight:600;font-size:.95rem;text-decoration:none;border:1px solid var(--ink);transition:.2s}
+.btn.p{background:var(--ink);color:#fff}.btn.p:hover{background:var(--acc);border-color:var(--acc)}
 .btn.s:hover{background:var(--ink);color:#fff}
-.photo{aspect-ratio:4/5;border-radius:16px;overflow:hidden;background:var(--accent-soft);border:1px solid var(--line);display:grid;place-items:center;font:700 4rem var(--head);color:var(--accent);box-shadow:0 18px 40px -22px rgba(27,36,51,.35)}
+.photo{aspect-ratio:4/5;border-radius:999px 999px 18px 18px;overflow:hidden;background:var(--soft);border:1px solid var(--line);display:grid;place-items:center;font:700 4rem var(--serif);color:var(--blue);box-shadow:0 30px 50px -30px rgba(20,33,61,.45)}
 .photo img{width:100%;height:100%;object-fit:cover;display:block}
-section{padding:84px 0}
-h2{font:700 clamp(1.8rem,3.5vw,2.4rem) var(--head);letter-spacing:-.01em;margin-bottom:10px}
-.sub{color:var(--muted);margin-bottom:36px;max-width:60ch}
-.tabs{display:inline-flex;border:1px solid var(--line);border-radius:10px;padding:4px;background:var(--surface);margin-bottom:32px}
-.tabs button{font:600 .9rem var(--body);border:0;background:none;padding:8px 18px;border-radius:7px;cursor:pointer;color:var(--muted)}
-.tabs button[aria-selected=true]{background:var(--ink);color:#fff}
-.panel[hidden]{display:none}
-.tl{border-left:2px solid var(--line);margin-left:6px}
-.item{position:relative;padding:0 0 34px 28px}
-.item::before{content:"";position:absolute;left:-7px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
-.item h3{font:700 1.15rem var(--head)}
-.meta{color:var(--muted);font-size:.88rem;margin:2px 0 8px}
-.item ul{padding-left:18px;color:#364154;font-size:.96rem}.item li{margin-bottom:4px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
-details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;transition:border-color .2s,box-shadow .2s}
-details:hover,details[open]{border-color:var(--accent);box-shadow:0 14px 30px -20px rgba(47,93,124,.5)}
-summary{cursor:pointer;list-style:none;font:700 1.1rem var(--head);display:flex;justify-content:space-between;gap:12px}
-summary::-webkit-details-marker{display:none}
-summary::after{content:"+";color:var(--accent);font-size:1.4rem;line-height:1}
-details[open] summary::after{content:"–"}
-details p{margin-top:12px;color:#364154;font-size:.95rem}
+.stats{position:relative;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--paper)}
+.stats div{padding:26px 24px;border-right:1px solid var(--line)}.stats div:last-child{border:0}
+.stats b{display:block;font:700 2.2rem/1.1 var(--serif);color:var(--blue)}
+.stats span{font-size:.85rem;color:var(--muted)}
+.ch{display:grid;grid-template-columns:190px 1fr;gap:40px;padding:84px 0;border-bottom:1px solid var(--line)}
+.no{font:italic 500 4.2rem/1 var(--serif);color:var(--acc);position:sticky;top:84px;align-self:start}
+.ch h2{font:700 clamp(1.7rem,3.4vw,2.5rem)/1.15 var(--serif);letter-spacing:-.015em;margin-bottom:16px}
+.ch p{color:#364154;max-width:62ch}
+.rows{margin-top:26px;border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:130px 1fr;gap:20px;padding:16px 0;border-bottom:1px solid var(--line)}
+.row small{color:var(--muted);font-size:.85rem}.row h3{font:700 1.05rem var(--serif)}.row p{font-size:.93rem;margin-top:2px}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
-.tag{font-size:.78rem;padding:3px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-weight:500}
-.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:28px}
-.skills h3{font:700 1rem var(--head);margin-bottom:10px}
-.skills .tags{margin:0}.skills .tag{background:var(--surface);border:1px solid var(--line);color:var(--ink);font-size:.85rem}
-#contact{background:var(--ink);color:#fff}
-#contact .sub{color:#B9C2CF}
-#contact .btn.p{background:#fff;color:var(--ink);border-color:#fff}#contact .btn.p:hover{background:var(--accent-soft)}
-#contact .btn.s{border-color:#5B6678;color:#fff}#contact .btn.s:hover{background:#fff;color:var(--ink)}
+.tag{font-size:.78rem;padding:3px 11px;border-radius:999px;background:var(--soft);color:var(--blue);font-weight:500}
+.feat{margin-top:30px;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:34px;display:grid;grid-template-columns:1.2fr 1fr;gap:36px;box-shadow:0 24px 50px -36px rgba(20,33,61,.4)}
+.feat h3{font:700 1.6rem/1.2 var(--serif);margin-bottom:10px}
+.feat .kick{font:600 .78rem var(--sans);text-transform:uppercase;letter-spacing:.08em;color:var(--acc);margin-bottom:8px}
+.feat p{font-size:.96rem;margin-bottom:10px}
+.bars{align-self:center}.bars h4{font:600 .85rem var(--sans);color:var(--muted);margin-bottom:14px}
+.bar{display:grid;grid-template-columns:90px 1fr 52px;gap:10px;align-items:center;margin-bottom:12px;font-size:.9rem}
+.bar i{display:block;height:12px;border-radius:6px;background:var(--soft);position:relative;overflow:hidden}
+.bar i::after{content:"";position:absolute;inset:0;width:0;background:var(--blue);border-radius:6px;transition:width 1.2s cubic-bezier(.2,.7,.2,1)}
+.bars.in .bar i::after{width:var(--w)}
+.bar:first-of-type i::after{background:var(--acc)}
+.bars small{display:block;color:var(--muted);font-size:.78rem;margin-top:10px}
+.mini{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:22px}
+.mini div{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px}
+.mini h3{font:700 1.1rem var(--serif);margin-bottom:6px}.mini p{font-size:.92rem}
+.pass{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:26px}
+.pass div{border:1px solid var(--line);background:var(--paper);border-radius:14px;padding:20px;transition:transform .25s,border-color .25s}
+.pass div:hover{transform:translateY(-4px);border-color:var(--acc)}
+.pass b{font:700 1.05rem var(--serif);display:block;margin-bottom:4px}.pass span{font-size:.9rem;color:var(--muted)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:24px;margin-top:24px}
+.skills h3{font:700 1rem var(--serif);margin-bottom:8px}.skills .tags{margin:0}
+#contact{background:var(--soft);padding:90px 0;text-align:center}
+#contact h2{font:700 clamp(2rem,4.5vw,3.4rem)/1.1 var(--serif);letter-spacing:-.02em}
+#contact h2 em{color:var(--acc)}#contact p{color:var(--muted);margin:14px auto 0;max-width:52ch}
+#contact .cta{justify-content:center}
 footer{padding:22px 0;font-size:.85rem;color:var(--muted);text-align:center}
-@media(max-width:760px){.hero-in{grid-template-columns:1fr;padding:56px 24px}.photo{max-width:260px;order:-1}nav a.hide{display:none}section{padding:60px 0}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+.js .rv{opacity:0;transform:translateY(20px);transition:opacity .8s,transform .8s}.js .rv.in{opacity:1;transform:none}
+@media(max-width:820px){.hero,.feat{grid-template-columns:1fr}.hero{padding:50px 24px}.photo{max-width:250px;order:-1}.ch{grid-template-columns:1fr;gap:12px;padding:60px 0}.no{position:static;font-size:3rem}.stats{grid-template-columns:1fr 1fr}.stats div:nth-child(2){border-right:0}.stats div:nth-child(-n+2){border-bottom:1px solid var(--line)}.row{grid-template-columns:1fr;gap:2px}nav a.hide{display:none}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}.js .rv{opacity:1;transform:none}.bars .bar i::after{width:var(--w)}}
 </style>
 </head>
 <body>
-<header><div class="wrap">
-  <a class="logo" href="#top">Djibril Hamilton</a>
-  <nav>
-    <a class="hide" href="#parcours"><span class="fr">Parcours</span><span class="en">Background</span></a>
-    <a class="hide" href="#projets"><span class="fr">Projets</span><span class="en">Projects</span></a>
-    <a class="hide" href="#competences"><span class="fr">Compétences</span><span class="en">Skills</span></a>
-    <a href="#contact">Contact</a>
-    <button id="lang" aria-label="Changer de langue / Switch language">EN</button>
-  </nav>
+<header><div class="w">
+ <a class="logo" href="#top">Djibril Hamilton</a>
+ <nav>
+  <a class="hide" href="#histoire"><span class="fr">Mon histoire</span><span class="en">My story</span></a>
+  <a class="hide" href="#data"><span class="fr">Projets data</span><span class="en">Data projects</span></a>
+  <a class="hide" href="#passions"><span class="fr">Passions</span><span class="en">Passions</span></a>
+  <a href="#contact">Contact</a>
+  <button id="lang" aria-label="Changer de langue / Switch language">EN</button>
+ </nav>
 </div></header>
 
 <main id="top">
 <div id="hero"><canvas id="net" aria-hidden="true"></canvas>
-<div class="wrap hero-in">
-  <div>
-    <h1>Djibril Hamilton</h1>
-    <p class="role"><span class="fr">Data &amp; Intelligence Artificielle</span><span class="en">Data &amp; Artificial Intelligence</span></p>
-    <p class="lead">
-      <span class="fr">Étudiant en double diplôme Centrale Nantes &amp; Audencia (Big Data, Management et IA). J'automatise des processus avec Python et n8n, et je construis des agents IA. Je recherche un stage ou une alternance en Data / IA.</span>
-      <span class="en">Dual-degree student at Centrale Nantes &amp; Audencia (Big Data, Management and AI). I automate processes with Python and n8n and build AI agents. I'm looking for an internship or work-study position in Data / AI.</span>
-    </p>
-    <div class="cta">
-      <a class="btn p" href="#contact"><span class="fr">Me contacter</span><span class="en">Get in touch</span></a>
-      <a class="btn s" href="CV_Djibril_Hamilton.pdf" download><span class="fr">Télécharger mon CV</span><span class="en">Download my CV</span></a>
-    </div>
-  </div>
-  <div class="photo"><img src="photo.jpg" alt="Portrait de Djibril Hamilton" onerror="this.remove();this.parentNode.textContent='DH'"></div>
-</div></div>
-
-<section id="parcours"><div class="wrap">
-  <h2><span class="fr">Parcours</span><span class="en">Background</span></h2>
-  <p class="sub"><span class="fr">Mes expériences et ma formation, de Nantes à Shenzhen en passant par Casablanca.</span><span class="en">My experience and education, from Nantes to Shenzhen via Casablanca.</span></p>
-  <div class="tabs" role="tablist">
-    <button role="tab" aria-selected="true" data-p="exp"><span class="fr">Expériences</span><span class="en">Experience</span></button>
-    <button role="tab" aria-selected="false" data-p="edu"><span class="fr">Formation</span><span class="en">Education</span></button>
-  </div>
-
-  <div class="panel tl" id="exp">
-    <div class="item"><h3>L2C Technologies</h3>
-      <p class="meta"><span class="fr">Stagiaire intégration IA · Nantes · mai – juillet 2026</span><span class="en">AI Integration Intern · Nantes · May – July 2026</span></p>
-      <ul class="fr"><li>Développement et automatisation de processus avec Python, n8n et différentes API ; création d'agents IA pour automatiser des tâches répétitives.</li><li>Création et administration de boutiques Shopify, optimisation SEO, gestion produits, modifications WordPress/Webflow.</li></ul>
-      <ul class="en"><li>Built and automated processes with Python, n8n and various APIs; created AI agents to automate repetitive tasks.</li><li>Created and managed Shopify stores, SEO optimization, product management, WordPress/Webflow edits.</li></ul></div>
-    <div class="item"><h3>Absolis Sud Intérim</h3>
-      <p class="meta"><span class="fr">Intérimaire saisonnier · Nantes · juillet – août 2025</span><span class="en">Seasonal temp worker · Nantes · July – Aug 2025</span></p>
-      <ul class="fr"><li>Missions courtes en logistique, production et travaux saisonniers : adaptabilité, fiabilité, sens du travail.</li></ul>
-      <ul class="en"><li>Short assignments in logistics, production and seasonal work: adaptability, reliability, strong work ethic.</li></ul></div>
-    <div class="item"><h3>FC Nantes</h3>
-      <p class="meta"><span class="fr">Équipier polyvalent · Nantes · depuis août 2024</span><span class="en">Team member · Nantes · since Aug 2024</span></p>
-      <ul class="fr"><li>Service client, encaissement et gestion des flux à forte affluence lors des matchs.</li><li>Anticipation des besoins en équipe, ouverture et fermeture de la buvette.</li></ul>
-      <ul class="en"><li>Customer service, cash handling and crowd flow management on match days.</li><li>Anticipating needs as a team, opening and closing the stand.</li></ul></div>
-    <div class="item"><h3>Keller Williams Realty</h3>
-      <p class="meta"><span class="fr">Assistant des opérations d'un agent immobilier · Texas, États-Unis · juin – août 2024</span><span class="en">Real estate agent operations assistant · Texas, USA · June – Aug 2024</span></p>
-      <ul class="fr"><li>Préparation des maisons, visites guidées, réponses aux clients : contribution à la vente de 4 maisons (environ 675 000 $ de bénéfice).</li><li>Support logistique pour les nouveaux propriétaires.</li></ul>
-      <ul class="en"><li>Prepared homes, led tours, answered client questions: contributed to the sale of 4 homes (about $675,000 in profit).</li><li>Logistics support for new homeowners.</li></ul></div>
-  </div>
-
-  <div class="panel tl" id="edu" hidden>
-    <div class="item"><h3>Centrale Nantes &amp; Audencia</h3>
-      <p class="meta"><span class="fr">Double diplôme Big Data, Management et IA · Nantes · 2023 – 2027</span><span class="en">Dual degree in Big Data, Management and AI · Nantes · 2023 – 2027</span></p>
-      <ul class="fr"><li>Systèmes d'information, Cloud computing, Visualisation scientifique, NLP, Informatique quantique.</li><li>Python, Business Intelligence (Power BI, Excel), bases de données SQL.</li></ul>
-      <ul class="en"><li>Information systems, Cloud computing, Scientific visualization, NLP, Quantum computing.</li><li>Python, Business Intelligence (Power BI, Excel), SQL databases.</li></ul></div>
-    <div class="item"><h3>Shenzhen University</h3>
-      <p class="meta"><span class="fr">Semestre d'échange · Chine · septembre 2025</span><span class="en">Exchange semester · China · September 2025</span></p>
-      <ul class="fr"><li>FinTech, IoT, Blockchain &amp; Business Analytics, étude des marchés chinois.</li></ul>
-      <ul class="en"><li>FinTech, IoT, Blockchain &amp; Business Analytics, Chinese market studies.</li></ul></div>
-    <div class="item"><h3>Centrale Casablanca</h3>
-      <p class="meta"><span class="fr">Semestre d'échange · Maroc · février 2025</span><span class="en">Exchange semester · Morocco · February 2025</span></p>
-      <ul class="fr"><li>Machine et Deep Learning, analyse de données, sécurité des systèmes d'information.</li></ul>
-      <ul class="en"><li>Machine and Deep Learning, data analysis, information systems security.</li></ul></div>
-    <div class="item"><h3>Lycée Les Bourdonnières</h3>
-      <p class="meta"><span class="fr">Baccalauréat général, mention bien · Nantes · 2020 – 2023</span><span class="en">General baccalaureate, with honors · Nantes · 2020 – 2023</span></p>
-      <ul class="fr"><li>Numérique et Sciences Informatiques, Mathématiques, section européenne allemand.</li></ul>
-      <ul class="en"><li>Computer Science, Mathematics, European German section.</li></ul></div>
-  </div>
-</div></section>
-
-<section id="projets" style="background:var(--surface);border-block:1px solid var(--line)"><div class="wrap">
-  <h2><span class="fr">Projets</span><span class="en">Projects</span></h2>
-  <p class="sub"><span class="fr">Projets data, IA et automatisation. Clique sur un projet pour voir le détail.</span><span class="en">Data, AI and automation projects. Click a project to see the details.</span></p>
-  <div class="grid">
-    <details open><summary><span class="fr">Prédicteur Coupe du Monde 2026</span><span class="en">World Cup 2026 predictor</span></summary>
-      <p class="fr">Moteur de prédiction qui simule le tournoi complet 50 000 fois. Il combine un modèle de Poisson Dixon-Coles, les ratings ELO, la qualité des effectifs (EA FC 26) et l'impact des blessures. Backtesté sur la Coupe du Monde 2022 : environ 60 % de précision sur les résultats et un score de Brier de 0,52 (0,67 pour le hasard). L'interface permet de simuler n'importe quel match et de voir la probabilité de chaque score.</p>
-      <p class="en">Prediction engine that simulates the whole tournament 50,000 times. It combines a Dixon-Coles Poisson model, ELO ratings, squad quality (EA FC 26) and injury impact. Backtested on the 2022 World Cup: about 60% accuracy on match results and a Brier score of 0.52 (0.67 for random guessing). The interface lets you simulate any match and see the probability of each scoreline.</p>
-      <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">React</span><span class="tag">Vite</span><span class="tag">TailwindCSS</span><span class="tag">SciPy</span><span class="tag">NumPy</span></div></details>
-    <details><summary>ChurnGuard</summary>
-      <p class="fr">Prédit quels clients vont partir, explique pourquoi et chiffre l'impact financier. Entraîné sur le dataset IBM Telco (7 032 clients, 21 variables). XGBoost retenu pour son meilleur ROC-AUC (0,856). Dashboard Streamlit en 4 pages : vue d'ensemble, clients à risque, impact business et explication SHAP par client. Environ 1,3 M$ de revenu annuel à risque identifié.</p>
-      <p class="en">Predicts which customers will leave, explains why and quantifies the financial impact. Trained on the IBM Telco dataset (7,032 customers, 21 features). XGBoost chosen for the best ROC-AUC (0.856). 4-page Streamlit dashboard: overview, at-risk customers, business impact and per-customer SHAP explanation. About $1.3M of annual revenue at risk identified.</p>
-      <div class="tags"><span class="tag">Python</span><span class="tag">XGBoost</span><span class="tag">SHAP</span><span class="tag">Streamlit</span><span class="tag">Plotly</span></div></details>
-    <details><summary><span class="fr">Agent IA planning sur Telegram</span><span class="en">Telegram AI planning agent</span></summary>
-      <p class="fr">Agent basé sur Claude, connecté à Telegram. Il comprend mes messages vocaux et écrits, gère mon planning comme un calendrier intelligent, optimise mon temps et m'envoie des rappels pour ne manquer aucun événement.</p>
-      <p class="en">Claude-based agent connected to Telegram. It understands my voice and text messages, manages my schedule like a smart calendar, optimizes my time and sends reminders so I never miss an event.</p>
-      <div class="tags"><span class="tag">Claude</span><span class="tag">Telegram</span><span class="tag">n8n</span><span class="tag"><span class="fr">Agent IA</span><span class="en">AI agent</span></span></div></details>
-    <details><summary><span class="fr">Newsletter tech personnalisée</span><span class="en">Personalised tech newsletter</span></summary>
-      <p class="fr">Newsletter sur l'actualité tech, générée automatiquement avec n8n et Claude et adaptée à mes centres d'intérêt.</p>
-      <p class="en">Tech news newsletter generated automatically with n8n and Claude, tailored to my interests.</p>
-      <div class="tags"><span class="tag">n8n</span><span class="tag">Claude</span><span class="tag"><span class="fr">Automatisation</span><span class="en">Automation</span></span></div></details>
-  </div>
-  <p style="margin-top:28px"><a class="btn s" href="https://github.com/djibrilhamilton" target="_blank" rel="noopener"><span class="fr">Voir tout sur GitHub</span><span class="en">See everything on GitHub</span></a></p>
-</div></section>
-
-<section id="competences"><div class="wrap">
-  <h2><span class="fr">Compétences</span><span class="en">Skills</span></h2>
-  <p class="sub"><span class="fr">Les outils et domaines que je maîtrise le mieux.</span><span class="en">The tools and fields I know best.</span></p>
-  <div class="skills">
-    <div><h3>Data &amp; IA</h3><div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Machine Learning</span><span class="tag">Deep Learning</span><span class="tag">NLP</span><span class="tag">Power BI</span><span class="tag">Excel</span></div></div>
-    <div><h3><span class="fr">Automatisation &amp; Web</span><span class="en">Automation &amp; Web</span></h3><div class="tags"><span class="tag">n8n</span><span class="tag">API</span><span class="tag">Shopify</span><span class="tag">HTML</span><span class="tag">SEO</span><span class="tag">WordPress</span><span class="tag">Webflow</span></div></div>
-    <div><h3><span class="fr">Business &amp; Finance</span><span class="en">Business &amp; Finance</span></h3><div class="tags"><span class="tag"><span class="fr">Analyse de données</span><span class="en">Data analysis</span></span><span class="tag">Business Intelligence</span><span class="tag"><span class="fr">Rapport financier</span><span class="en">Financial reporting</span></span><span class="tag"><span class="fr">Comptabilité</span><span class="en">Accounting</span></span></div></div>
-    <div><h3><span class="fr">Langues</span><span class="en">Languages</span></h3><div class="tags"><span class="tag"><span class="fr">Français (natif)</span><span class="en">French (native)</span></span><span class="tag"><span class="fr">Anglais (bilingue)</span><span class="en">English (bilingual)</span></span><span class="tag"><span class="fr">Allemand (B2)</span><span class="en">German (B2)</span></span></div></div>
-  </div>
-</div></section>
-
-<section id="contact"><div class="wrap">
-  <h2><span class="fr">Discutons</span><span class="en">Let's talk</span></h2>
-  <p class="sub"><span class="fr">Je recherche un stage ou une alternance en Data / IA. Écris-moi, je réponds rapidement.</span><span class="en">I'm looking for a Data / AI internship or work-study. Write to me, I reply quickly.</span></p>
+<div class="w hero">
+ <div>
+  <span class="badge"><span class="fr">Stage de 6 mois · dès février 2027 · Data Analyst / Data Scientist</span><span class="en">6-month internship · from February 2027 · Data Analyst / Data Scientist</span></span>
+  <h1><span class="fr">Je transforme les données en <em>décisions</em>.</span><span class="en">I turn data into <em>decisions</em>.</span></h1>
+  <p class="lead"><span class="fr">Je m'appelle Djibril, j'étudie à Centrale Nantes &amp; Audencia (Big Data, Management et IA). Je construis des modèles, des dashboards et des automatisations. Ce site raconte comment je suis arrivé là.</span><span class="en">I'm Djibril, studying at Centrale Nantes &amp; Audencia (Big Data, Management and AI). I build models, dashboards and automations. This site tells how I got here.</span></p>
   <div class="cta">
-    <a class="btn p" href="mailto:djibril.hamilton@audencia.com">djibril.hamilton@audencia.com</a>
-    <a class="btn s" href="https://www.linkedin.com/in/djibril-hamilton-a20854295/" target="_blank" rel="noopener">LinkedIn</a>
-    <a class="btn s" href="https://github.com/djibrilhamilton" target="_blank" rel="noopener">GitHub</a>
+   <a class="btn p" href="#contact"><span class="fr">Me contacter</span><span class="en">Get in touch</span></a>
+   <a class="btn s" href="CV_Djibril_Hamilton.pdf" download><span class="fr">Télécharger mon CV</span><span class="en">Download my CV</span></a>
   </div>
+ </div>
+ <div class="photo"><img src="photo.jpg" alt="Portrait de Djibril Hamilton" onerror="this.remove();this.parentNode.textContent='DH'"></div>
+</div></div>
+<div class="stats">
+ <div><b data-n="50000">0</b><span class="fr">simulations Monte Carlo de la Coupe du Monde</span><span class="en">Monte Carlo World Cup simulations</span></div>
+ <div><b data-n="0.856" data-d="3">0</b><span class="fr">ROC-AUC du modèle ChurnGuard</span><span class="en">ROC-AUC of the ChurnGuard model</span></div>
+ <div><b data-n="4">0</b><span class="fr">pays où j'ai étudié ou travaillé</span><span class="en">countries where I studied or worked</span></div>
+ <div><b data-n="3">0</b><span class="fr">langues : français, anglais, allemand</span><span class="en">languages: French, English, German</span></div>
+</div>
+
+<div class="w" id="histoire">
+ <section class="ch rv"><div class="no">01</div><div>
+  <h2><span class="fr">Tout part de la curiosité</span><span class="en">It all starts with curiosity</span></h2>
+  <p class="fr">Bac général mention bien, avec 18/20 en Numérique et Sciences Informatiques : c'est là que les maths et le code sont devenus mon terrain de jeu. Depuis, j'aime une chose : poser une question simple, puis construire la réponse avec des données.</p>
+  <p class="en">General baccalaureate with honors, 18/20 in Computer Science: that's where maths and code became my playground. Since then I love one thing: asking a simple question, then building the answer with data.</p>
+ </div></section>
+
+ <section class="ch rv"><div class="no">02</div><div>
+  <h2><span class="fr">Apprendre à Nantes, Casablanca et Shenzhen</span><span class="en">Learning in Nantes, Casablanca and Shenzhen</span></h2>
+  <p class="fr">Mon double diplôme Centrale Nantes &amp; Audencia (2023-2027) mêle technique et management. Deux semestres à l'étranger m'ont appris à travailler dans d'autres contextes.</p>
+  <p class="en">My Centrale Nantes &amp; Audencia dual degree (2023-2027) blends tech and management. Two semesters abroad taught me to work in other contexts.</p>
+  <div class="rows">
+   <div class="row"><small>2023 – 2027</small><div><h3>Centrale Nantes &amp; Audencia</h3><p class="fr">Big Data, Management et IA : Python (18,3/20), SQL (17,2/20), Cloud, NLP, Business Intelligence (Power BI, Excel), informatique quantique (19,1/20).</p><p class="en">Big Data, Management and AI: Python (18.3/20), SQL (17.2/20), Cloud, NLP, Business Intelligence (Power BI, Excel), quantum computing (19.1/20).</p></div></div>
+   <div class="row"><small><span class="fr">Sept. 2025</span><span class="en">Sept 2025</span></small><div><h3>Shenzhen University</h3><p class="fr">FinTech (18,8/20), IoT, Blockchain &amp; Business Analytics (19/20), marchés chinois.</p><p class="en">FinTech (18.8/20), IoT, Blockchain &amp; Business Analytics (19/20), Chinese markets.</p></div></div>
+   <div class="row"><small><span class="fr">Févr. 2025</span><span class="en">Feb 2025</span></small><div><h3>Centrale Casablanca</h3><p class="fr">Machine et Deep Learning, analyse de données (17,2/20), sécurité des systèmes d'information (19/20).</p><p class="en">Machine and Deep Learning, data analysis (17.2/20), information systems security (19/20).</p></div></div>
+  </div>
+ </div></section>
+
+ <section class="ch rv"><div class="no">03</div><div>
+  <h2><span class="fr">Apprendre sur le terrain</span><span class="en">Learning on the ground</span></h2>
+  <p class="fr">En parallèle des études, j'ai travaillé au contact de clients, d'équipes et de vrais enjeux : vente immobilière aux États-Unis, buvette du FC Nantes les soirs de match, puis automatisation chez L2C.</p>
+  <p class="en">Alongside my studies, I worked with customers, teams and real stakes: real estate in the US, the FC Nantes stand on match nights, then automation at L2C.</p>
+  <div class="rows">
+   <div class="row"><small><span class="fr">Mai – juil. 2026</span><span class="en">May – Jul 2026</span></small><div><h3>L2C Technologies · <span class="fr">Stagiaire intégration IA</span><span class="en">AI integration intern</span></h3><p class="fr">Automatisation de processus avec Python, n8n et des API, agents IA, boutiques Shopify, SEO, WordPress/Webflow.</p><p class="en">Process automation with Python, n8n and APIs, AI agents, Shopify stores, SEO, WordPress/Webflow.</p></div></div>
+   <div class="row"><small><span class="fr">Depuis août 2024</span><span class="en">Since Aug 2024</span></small><div><h3>FC Nantes · <span class="fr">Équipier polyvalent</span><span class="en">Team member</span></h3><p class="fr">Service, encaissement et gestion des flux à forte affluence les jours de match.</p><p class="en">Service, cash handling and crowd flow on match days.</p></div></div>
+   <div class="row"><small><span class="fr">Été 2025</span><span class="en">Summer 2025</span></small><div><h3>Absolis Sud Intérim</h3><p class="fr">Missions courtes en logistique, production et travaux saisonniers.</p><p class="en">Short assignments in logistics, production and seasonal work.</p></div></div>
+   <div class="row"><small><span class="fr">Été 2024</span><span class="en">Summer 2024</span></small><div><h3>Keller Williams Realty · Texas</h3><p class="fr">Assistant d'un agent immobilier : contribution à la vente de 4 maisons (environ 675 000 $ de bénéfice).</p><p class="en">Real estate agent assistant: contributed to the sale of 4 homes (about $675,000 in profit).</p></div></div>
+  </div>
+ </div></section>
+
+ <section class="ch rv" id="data"><div class="no">04</div><div>
+  <h2><span class="fr">Les données en action</span><span class="en">Data in action</span></h2>
+  <p class="fr">Mes projets partent tous d'une question concrète. Voici les deux dont je suis le plus fier.</p>
+  <p class="en">All my projects start from a concrete question. Here are the two I'm proudest of.</p>
+
+  <article class="feat">
+   <div>
+    <div class="kick"><span class="fr">Quand le foot rencontre les maths</span><span class="en">When football meets maths</span></div>
+    <h3><span class="fr">Prédicteur de la Coupe du Monde 2026</span><span class="en">World Cup 2026 predictor</span></h3>
+    <p class="fr">Quand la Coupe du Monde a commencé, je ne voulais pas seulement regarder les matchs. Passionné de foot, je me suis demandé : peut-on vraiment le prédire avec des maths ? J'ai passé mes week-ends à construire la réponse.</p>
+    <p class="en">When the World Cup began, I didn't want to just watch. As a football fan, I asked myself: can you really predict it with maths? I spent my weekends building the answer.</p>
+    <p class="fr">Le moteur combine un modèle de Poisson Dixon-Coles, des ratings ELO, la qualité des effectifs (EA FC 26) et l'impact des blessures, puis simule le tournoi 50 000 fois. Backtesté sur 2022 : environ 60 % de précision, Brier 0,52 contre 0,67 pour le hasard. Les rares erreurs sûres de lui : Argentine-Arabie saoudite, Japon-Allemagne, Maroc-Portugal, soit les trois plus grandes surprises du tournoi.</p>
+    <p class="en">The engine combines a Dixon-Coles Poisson model, ELO ratings, squad quality (EA FC 26) and injury impact, then simulates the tournament 50,000 times. Backtested on 2022: about 60% accuracy, Brier 0.52 versus 0.67 for chance. Its few confident misses: Argentina-Saudi Arabia, Japan-Germany, Morocco-Portugal, the three biggest upsets of the tournament.</p>
+    <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">React</span><span class="tag">Vite</span><span class="tag">TailwindCSS</span><span class="tag">SciPy</span><span class="tag">NumPy</span></div>
+   </div>
+   <div class="bars">
+    <h4><span class="fr">Probabilité de gagner le tournoi (50 000 simulations)</span><span class="en">Probability of winning the tournament (50,000 simulations)</span></h4>
+    <div class="bar" style="--w:100%"><span class="fr">Argentine</span><span class="en">Argentina</span><i></i><b>17,2 %</b></div>
+    <div class="bar" style="--w:90%"><span class="fr">France</span><span class="en">France</span><i></i><b>15,5 %</b></div>
+    <div class="bar" style="--w:74%"><span class="fr">Brésil</span><span class="en">Brazil</span><i></i><b>12,8 %</b></div>
+    <small class="fr">Verdict du modèle, avant le coup d'envoi.</small><small class="en">Model verdict before kick-off.</small>
+   </div>
+  </article>
+
+  <article class="feat">
+   <div>
+    <div class="kick"><span class="fr">De la donnée à l'impact financier</span><span class="en">From data to financial impact</span></div>
+    <h3>ChurnGuard</h3>
+    <p class="fr">Quels clients vont partir, pourquoi, et combien cela coûte ? Entraîné sur le dataset IBM Telco (7 032 clients, 21 variables), XGBoost est retenu pour son meilleur ROC-AUC. Le dashboard Streamlit couvre les KPI, les clients à risque, l'impact business et l'explication SHAP de chaque client : environ 1,3 M$ de revenu annuel à risque identifié.</p>
+    <p class="en">Which customers will leave, why, and what does it cost? Trained on the IBM Telco dataset (7,032 customers, 21 features), XGBoost was chosen for the best ROC-AUC. The Streamlit dashboard covers KPIs, at-risk customers, business impact and per-customer SHAP explanations: about $1.3M of annual revenue at risk identified.</p>
+    <div class="tags"><span class="tag">Python</span><span class="tag">XGBoost</span><span class="tag">SHAP</span><span class="tag">Streamlit</span><span class="tag">Plotly</span></div>
+   </div>
+   <div class="bars">
+    <h4>ROC-AUC</h4>
+    <div class="bar" style="--w:85.6%"><span>XGBoost</span><i></i><b>0,856</b></div>
+    <div class="bar" style="--w:84.7%"><span>Random Forest</span><i></i><b>0,847</b></div>
+    <div class="bar" style="--w:84.3%"><span>Logistic Reg.</span><i></i><b>0,843</b></div>
+   </div>
+  </article>
+
+  <div class="mini">
+   <div><h3><span class="fr">Agent IA sur Telegram</span><span class="en">Telegram AI agent</span></h3><p class="fr">Un agent Claude qui comprend mes vocaux et messages, gère mon planning comme un calendrier intelligent et m'envoie des rappels.</p><p class="en">A Claude agent that understands my voice and text messages, manages my schedule like a smart calendar and sends reminders.</p></div>
+   <div><h3><span class="fr">Newsletter tech personnalisée</span><span class="en">Personalised tech newsletter</span></h3><p class="fr">Une veille tech générée automatiquement avec n8n et Claude, adaptée à mes centres d'intérêt.</p><p class="en">Tech news generated automatically with n8n and Claude, tailored to my interests.</p></div>
+  </div>
+  <div class="cta"><a class="btn s" href="https://github.com/djibrilhamilton" target="_blank" rel="noopener"><span class="fr">Voir le code sur GitHub</span><span class="en">See the code on GitHub</span></a></div>
+ </div></section>
+
+ <section class="ch rv" id="passions"><div class="no">05</div><div>
+  <h2><span class="fr">Ce qui me fait avancer hors des écrans</span><span class="en">What drives me away from screens</span></h2>
+  <p class="fr">Au-delà des chiffres, voici ce qui me définit.</p><p class="en">Beyond the numbers, here's what defines me.</p>
+  <div class="pass">
+   <div><b><span class="fr">Football</span><span class="en">Football</span></b><span class="fr">Je le regarde, je le travaille au FC Nantes et j'ai fini par le modéliser.</span><span class="en">I watch it, work at FC Nantes and ended up modelling it.</span></div>
+   <div><b>Basketball</b><span class="fr">Un sport collectif où la lecture du jeu compte autant que la technique.</span><span class="en">A team sport where reading the game matters as much as technique.</span></div>
+   <div><b><span class="fr">Voyages</span><span class="en">Travel</span></b><span class="fr">Texas, Maroc, Chine : j'aime découvrir d'autres façons de travailler et de penser.</span><span class="en">Texas, Morocco, China: I love discovering other ways of working and thinking.</span></div>
+   <div><b><span class="fr">Littérature</span><span class="en">Literature</span></b><span class="fr">Un goût pour les histoires, que j'essaie de mettre dans mes projets.</span><span class="en">A taste for stories, which I try to bring into my projects.</span></div>
+  </div>
+  <div class="skills">
+   <div><h3>Data &amp; IA</h3><div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Machine Learning</span><span class="tag">NLP</span><span class="tag">Power BI</span><span class="tag">Excel</span></div></div>
+   <div><h3><span class="fr">Automatisation &amp; Web</span><span class="en">Automation &amp; Web</span></h3><div class="tags"><span class="tag">n8n</span><span class="tag">API</span><span class="tag">Shopify</span><span class="tag">HTML</span><span class="tag">SEO</span></div></div>
+   <div><h3><span class="fr">Langues</span><span class="en">Languages</span></h3><div class="tags"><span class="tag"><span class="fr">Français (natif)</span><span class="en">French (native)</span></span><span class="tag"><span class="fr">Anglais (bilingue)</span><span class="en">English (bilingual)</span></span><span class="tag"><span class="fr">Allemand (B2)</span><span class="en">German (B2)</span></span></div></div>
+  </div>
+ </div></section>
+</div>
+
+<section id="contact"><div class="w rv">
+ <h2><span class="fr">Et si on travaillait <em>ensemble</em> ?</span><span class="en">Shall we work <em>together</em>?</span></h2>
+ <p class="fr">Je cherche un stage de 6 mois à partir de février 2027 en data analysis ou data science. Écris-moi, je réponds vite.</p>
+ <p class="en">I'm looking for a 6-month internship from February 2027 in data analysis or data science. Write to me, I reply fast.</p>
+ <div class="cta">
+  <a class="btn p" href="mailto:djibril.hamilton@audencia.com">djibril.hamilton@audencia.com</a>
+  <a class="btn s" href="https://www.linkedin.com/in/djibril-hamilton-a20854295/" target="_blank" rel="noopener">LinkedIn</a>
+  <a class="btn s" href="https://github.com/djibrilhamilton" target="_blank" rel="noopener">GitHub</a>
+ </div>
 </div></section>
 </main>
 <footer>© 2026 Djibril Hamilton · Nantes</footer>
 
 <script>
-// Langue (mémorisée)
 const root=document.documentElement,lb=document.getElementById('lang');
 function setLang(l){root.lang=l;lb.textContent=l==='fr'?'EN':'FR';try{localStorage.setItem('lang',l)}catch(e){}}
 let saved='fr';try{saved=localStorage.getItem('lang')||((navigator.language||'fr').startsWith('fr')?'fr':'en')}catch(e){}
 setLang(saved);lb.onclick=()=>setLang(root.lang==='fr'?'en':'fr');
-// Onglets Expériences / Formation
-document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{
-  document.querySelectorAll('.tabs button').forEach(x=>x.setAttribute('aria-selected',x===b));
-  document.querySelectorAll('.panel').forEach(p=>p.hidden=p.id!==b.dataset.p);
-});
-// Réseau de points interactif (hero)
+// Apparition au scroll + barres
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.rv,.bars').forEach(n=>io.observe(n));
+// Compteurs
+const still=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function fmt(v,d){return v.toLocaleString(root.lang==='fr'?'fr-FR':'en-US',{minimumFractionDigits:d,maximumFractionDigits:d})}
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;co.unobserve(e.target);
+  const el=e.target,n=+el.dataset.n,d=+(el.dataset.d||0),t0=performance.now();
+  (function f(t){const k=still?1:Math.min((t-t0)/1400,1);el.textContent=fmt(n*(1-Math.pow(1-k,3)),d);if(k<1)requestAnimationFrame(f)})(t0)}),{threshold:.6});
+document.querySelectorAll('[data-n]').forEach(n=>co.observe(n));
+// Réseau interactif (hero)
 (function(){
-  const c=document.getElementById('net'),x=c.getContext('2d'),m={x:-999,y:-999};
-  const still=matchMedia('(prefers-reduced-motion:reduce)').matches;
-  let w,h,pts=[];
-  function size(){w=c.width=c.offsetWidth;h=c.height=c.offsetHeight;
-    pts=Array.from({length:Math.round(w*h/14000)},()=>({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.3}))}
-  function draw(){x.clearRect(0,0,w,h);
-    for(const p of pts){
-      if(!still){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>w)p.vx*=-1;if(p.y<0||p.y>h)p.vy*=-1}
-      const dx=p.x-m.x,dy=p.y-m.y,d=Math.hypot(dx,dy);
-      if(d<110&&!still){p.x+=dx/d*1.2;p.y+=dy/d*1.2}
-      x.fillStyle='rgba(47,93,124,.45)';x.beginPath();x.arc(p.x,p.y,2,0,6.3);x.fill()}
-    for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){
-      const d=Math.hypot(pts[i].x-pts[j].x,pts[i].y-pts[j].y);
-      if(d<110){x.strokeStyle='rgba(47,93,124,'+(.18*(1-d/110))+')';x.beginPath();x.moveTo(pts[i].x,pts[i].y);x.lineTo(pts[j].x,pts[j].y);x.stroke()}}
-    if(!still)requestAnimationFrame(draw)}
-  c.parentNode.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();m.x=e.clientX-r.left;m.y=e.clientY-r.top});
-  c.parentNode.addEventListener('mouseleave',()=>{m.x=m.y=-999});
-  addEventListener('resize',()=>{size();if(still)draw()});
-  size();draw();
+ const c=document.getElementById('net'),x=c.getContext('2d'),m={x:-999,y:-999};let w,h,pts=[];
+ function size(){w=c.width=c.offsetWidth;h=c.height=c.offsetHeight;pts=Array.from({length:Math.round(w*h/15000)},()=>({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.3}))}
+ function draw(){x.clearRect(0,0,w,h);
+  for(const p of pts){if(!still){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>w)p.vx*=-1;if(p.y<0||p.y>h)p.vy*=-1}
+   const dx=p.x-m.x,dy=p.y-m.y,d=Math.hypot(dx,dy);if(d<110&&!still){p.x+=dx/d*1.2;p.y+=dy/d*1.2}
+   x.fillStyle='rgba(47,93,124,.4)';x.beginPath();x.arc(p.x,p.y,2,0,6.3);x.fill()}
+  for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){const d=Math.hypot(pts[i].x-pts[j].x,pts[i].y-pts[j].y);
+   if(d<110){x.strokeStyle='rgba(47,93,124,'+.16*(1-d/110)+')';x.beginPath();x.moveTo(pts[i].x,pts[i].y);x.lineTo(pts[j].x,pts[j].y);x.stroke()}}
+  if(!still)requestAnimationFrame(draw)}
+ const p=c.parentNode;p.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();m.x=e.clientX-r.left;m.y=e.clientY-r.top});
+ p.addEventListener('mouseleave',()=>{m.x=m.y=-999});addEventListener('resize',()=>{size();if(still)draw()});size();draw();
 })();
 </script>
 </body>
